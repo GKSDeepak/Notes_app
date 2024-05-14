@@ -1,0 +1,14 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 800px;
+    margin: auto;
+}
+
+img {
+    width: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}

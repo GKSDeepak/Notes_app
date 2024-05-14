@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>NOTES</title>
+</head>
+<body>
+    <h1>content of <%= note.title  %> will be there</h1>
+
+                <h4>created at <%=      new Date(note.timestamp)      %></h4>
+                <p><%=note.contents%></p>
+                <a href="/notes"> back </a>
+
+
+                <!-- to delete  -->
+                <form action="/notes/<%=note.id%>/delete" method="post">
+                    <button type="submit">delete this note</button>
+
+                </form>
+    
+</body>
+</html>

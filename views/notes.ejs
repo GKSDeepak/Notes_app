@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>ALL NOTES</title>
+</head>
+<body>
+    <h1>All the notes will be diplayed here</h1>
+    <form action="/notes" method="get">
+        <label for="searchInput">
+            Search:
+        </label>
+        <input type="text" name="searchTerm" id="searchInput">
+    </form>
+    <ul>
+        <%  notes.forEach(note => { %>
+            <li> 
+                <h2><%= note.title %> </h2>
+                <h4>created at <%=      new Date(note.timestamp)      %></h4>
+                <p><%=note.contents.substring(0,10)%>.....</p>
+                <a href="/notes/<%= note.id %>"> view more about this note</a>
+            </li>
+        <%   })  %>
+
+    </ul>
+    <a href="/createNote">create a note</a>
+    
+</body>
+</html>

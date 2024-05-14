@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>New Note</title>
+</head>
+<body>
+    <h1>create a Note</h1>
+
+    <form action="/createNotes" method="POST">
+        <label for="titleInput">title</label>
+        <input type="text" id="titleInput"  name="title"> <!--here the name is the one which goes to server --> 
+
+        <label for="contentInput">contents</label>
+        <textarea name="contents" id="contentInput" cols="30" rows="10" ></textarea>
+
+        <button type="submit">create note</button>
+    </form>
+</body>
+</html>

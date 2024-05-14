@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Notes App</title>
+</head>
+<body>
+    <h1> this is my webpage</h1>
+    <img src="https://imgs.search.brave.com/Q5Z4-8Oz80F04pBk_PLfXcLcMXzGPX28h-Cl2eUk-OM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC9ocmx0eDEy/cGw4aHEvNmJpNndL/SU01RERNNVUxUHRH/VkZjUC8xYzdmY2U2/ZGUzM2JiNjU3NTU0/OGE2NDZmZjliMDNh/YS9uYXR1cmUtcGhv/dG9ncmFwaHktcGlj/dHVyZXMuanBnP2Zp/dD1maWxsJnc9NjAw/Jmg9MTIwMA">
+
+    <p><%= Date() %></p>        <!-- if there is = then it is put into the html the page-->
+
+    <ul>
+        <% for(let i =0; i<noOfIterations; i++){  %>     <!-- here that noOfIter is passed when we render the index.ejs file this is more like giving data to be displayed on  the page through javascrip code taken from the databses-->
+           <li> <%=   i  %></li>
+        <%   }  %>
+    </ul>   <!-- only number are shown in the html page not the code above and below it.-->
+</body>
+</html>
